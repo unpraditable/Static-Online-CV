@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        header.section-header{
+            box-shadow: none;
+        }
+
+        .experience-year{
+            color: #2B9FDC;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 700;
+            position: absolute;
+            top: -30px;
+        }
+
+        #experience-content{
+            margin-top: 60px;
+        }
+
+        .experience{
+            position: relative;
+            border-left: 1px dashed black; 
+            padding-left: 20px;
+            margin-left: 10px;
+            padding-bottom: 40px;
+        }
+
+        .experience:last-child{
+            border-left: 1px dashed transparent;
+        }
+
+        .experience-title{
+            margin-top: 0;
+            line-height: 1;
+        }
+
+        .experience:before{
+            position: absolute;
+            left:-7.5px;
+            top:0;
+            width: 15px;
+            height: 15px;
+            background: #2B9FDC;
+            display: block;
+            content: "";
+            border-radius: 100%;
+        }
+
+        .experience-content{
+            font-size: 14px;
+            line-height: 2;
+        }
+    </style>
+    <header>
+        <div class="container">
+            <div class="flex-row">
+                <div class="flex-col">
+                    <img class="profile-photo" src="assets/images/photo.jpeg" />
+                </div>
+                <div class="flex-col profile-details">
+                    <h1>Aditya Pradita</h1>
+                    <h2>Front End Engineer</h2>
+                    <p>Bandung, Indonesia</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="section" id="experience-section">
+        <div class="container">
+            <header class="section-header">
+                <h3>Work Experience</h3>
+            </header>
+
+            <div class="content" id="experience-content">
+                <div class="experience">
+                    <p class="experience-year">2019 - 7 Months</p>
+                    <h4 class="experience-title">UI Developer / iLOTTE.com</h4>
+                    <p class="experience-content">Collaborates with UI & UX Designers and Developers to translate mockup designs to functional User Interface that is attractive and meaningful for users</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2017 - 2 Years</p>
+                    <h4 class="experience-title">Frontend Developer / Rolling Glory</h4>
+                    <p class="experience-content">Collaborate with UI & UX Designers to translate mockup designs to functional User Interface, and collaborate with Backend Developers to integrate the data from backend or API that is created by them to the User Interface, so it will become a fully functional web applications.</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2016 - 1 Year</p>
+                    <h4 class="experience-title">Frontend Developer / Makers Institute Bandung</h4>
+                    <p class="experience-content">Learn to be a fully functional Frontend Developer and collaborate with the team to create Makers Institute website. Several projects that are received are also being done while learning something awesome here.</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2015 - 6 Months</p>
+                    <h4 class="experience-title">Product Analyst / Qerja.com</h4>
+                    <p class="experience-content">Gather requirements from user and translate it, so it could be developed by the developer team in order to build new features or new projects in jobs.id and qerja.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
