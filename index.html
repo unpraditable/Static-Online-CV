@@ -59,7 +59,7 @@
     </header>
     <div class="container">
         <div class="section" id="about-section">
-            <h3>About & Education <span class="chevron"><img src="assets/chevron-down.svg"></span></h3>
+            <h3>About & Education <span class="chevron" onclick="toggleSection('about-content')"><img src="assets/chevron-down.svg"></span></h3>
             <div class="content" id="about-content">
                 <p>Front End Web Developer with 4 years of work experiences and a product enthusiast, especially digital products. Values benevolence and mindfulness the most. Always itchy to solve some problems and learn something new. If this guy gets
                     burned out, he often watches football matches, animes, reading mangas, and writing fictions. </p>
@@ -89,7 +89,7 @@
 
         <div class="section" id="experience-section">
             <header class="section-header">
-                <h3>Work Experience <span class="chevron"><img src="assets/chevron-down.svg"></span></h3>
+                <h3>Work Experience <span class="chevron"><img src="assets/chevron-down.svg" onclick="toggleSection('experience-content')"></span></h3>
             </header>
 
             <div class="content" id="experience-content">
@@ -120,7 +120,7 @@
 
         <div class="section" id="skill-section">
             <header class="section-header">
-                <h3>Skills & Expertise <span class="chevron"><img src="assets/chevron-down.svg"></span></h3>
+                <h3>Skills & Expertise <span class="chevron"><img src="assets/chevron-down.svg" onclick="toggleSection('skill-content')"></span></h3>
             </header>
 
             <div class="content" id="skill-content">
@@ -143,30 +143,30 @@
 
         <div class="section" id="works-section">
             <header class="section-header">
-                <h3>Works <span class="chevron"><img src="assets/chevron-down.svg"></span></h3>
+                <h3>Works <span class="chevron"><img src="assets/chevron-down.svg" onclick="toggleSection('works-content-container')"></span></h3>
             </header>
             <div class="content" id="works-content-container">
                 <div id="works-content">
-                    <div class="cell cell-1">
+                    <a href="https://unpraditable.github.io/Vue-Football-Club-Finder" class="cell cell-1" target="_blank">
                         <h4>Vue Football Club Finder</h4>
                         <p>2020</p>
-                    </div>
-                    <div class="cell cell-2">
+                    </a>
+                    <a href="https://unpraditable.github.io/K-Festival-Remake-With-React/" target="_blank" class="cell cell-2">
                         <h4>iLOTTE K-Festival 2019 Page</h4>
                         <p>2019</p>
-                    </div>
-                    <div class="cell cell-3">
+                    </a>
+                    <a href="http://www.kalgeninnolab.co.id/en" class="cell cell-3" target="_blank">
                         <h4>Kalgen Innolab Web App</h4>
                         <p>2018</p>
-                    </div>
-                    <div class="cell cell-4">
+                    </a>
+                    <a href="https://morinagaplatinum.com/id" class="cell cell-4" target="_blank">
                         <h4>Morinaga Platinum ComPro</h4>
                         <p>2017</p>
-                    </div>
-                    <div class="cell cell-5">
+                    </a>
+                    <a href="https://makersinstitute.id/" class="cell cell-5" target="_blank">
                         <h4>Makers Institute Website</h4>
                         <p>2016</p>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="see-all-container">
@@ -183,9 +183,9 @@
             addSticky()
         };
 
-        var header = document.getElementById("sticky-container");
+        let header = document.getElementById("sticky-container");
 
-        var sticky = header.offsetTop;
+        let sticky = header.offsetTop;
 
         function addSticky() {
             if (window.pageYOffset > sticky) {
@@ -204,9 +204,9 @@
             if (pos < 0) {
                 throw "Position can not be negative";
             }
-            var currentPos = window.scrollY || window.screenTop;
+            let currentPos = window.scrollY || window.screenTop;
             if (currentPos < pos) {
-                var t = 10;
+                let t = 10;
                 for (let i = currentPos; i <= pos; i += 10) {
                     t += 10;
                     setTimeout(function() {
@@ -215,8 +215,8 @@
                 }
             } else {
                 time = time || 2;
-                var i = currentPos;
-                var x;
+                let i = currentPos;
+                let x;
                 x = setInterval(function() {
                     window.scrollTo(0, i);
                     i -= 10;
@@ -228,7 +228,7 @@
         }
 
         function smoothScroll(id) {
-            var elem = document.getElementById(id);
+            let elem = document.getElementById(id);
             scrollToSmoothly(elem.offsetTop, 4);
         }
 
@@ -245,8 +245,8 @@
                 let section = document.querySelector(link.hash);
 
                 if (
-                    section.offsetTop <= fromTop &&
-                    section.offsetTop + section.offsetHeight > fromTop
+                    section.offsetTop <= fromTop + 30 &&
+                    section.offsetTop + section.offsetHeight > fromTop + 30
                 ) {
                     link.classList.add("active");
                 } else {
@@ -254,6 +254,11 @@
                 }
             });
         });
+
+
+        let toggleSection = function(el) {
+            document.getElementById(el).classList.toggle('hidden');
+        }
     </script>
 </body>
 

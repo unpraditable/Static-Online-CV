@@ -243,14 +243,14 @@ nav a.active {
 
 .sns-link ul li {
     display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
+    margin: 0 2px;
+    width: 25px;
+    height: 25px;
 }
 
 .sns-link ul li img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     /* border-radius: 100%; */
 }
 
@@ -338,6 +338,10 @@ td {
     font-size: 16px;
 }
 
+#works-content-container {
+    margin-top: 40px;
+}
+
 @media only screen and (min-width: 769px) {
     #works-content {
         display: grid;
@@ -356,26 +360,34 @@ td {
     #works-content .cell {
         height: 125px;
         margin-bottom: 30px;
-        display: inline-block !important;
+        display: flex;
         margin-right: 20px;
+        align-items: flex-end;
     }
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
 }
 
 #works-content .cell {
     color: white;
     text-align: left;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    align-items: flex-start;
     background-repeat: no-repeat;
-    /* text-shadow: 1px 1px rgba(255, 255, 255, 0.6); */
+    /* text-shadow: 1px 1px rgba(100, 100, 100, 0.6); */
+    text-decoration: none;
+    transition: all 1s;
 }
 
-#works-content .cell:hover,
-#works-content .cell:focus {
+#works-content .cell:hover {
     cursor: pointer;
 }
 
@@ -395,10 +407,18 @@ td {
     grid-column: 1/2;
 }
 
+#works-content .cell-1:hover {
+    background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url("assets/images/football-background.jpg");
+}
+
 #works-content .cell-2 {
     background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/images/ilotte-background.jpg");
     background-size: cover;
     background-position: center center;
+}
+
+#works-content .cell-2:hover {
+    background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url("assets/images/ilotte-background.jpg");
 }
 
 #works-content .cell-3 {
@@ -407,16 +427,28 @@ td {
     background-position: center center;
 }
 
+#works-content .cell-3:hover {
+    background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url("assets/images/innolab-background.jpg");
+}
+
 #works-content .cell-4 {
     background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/images/morinaga-background.jpg");
     background-size: cover;
     background-position: center center;
 }
 
+#works-content .cell-4:hover {
+    background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url("assets/images/morinaga-background.jpg");
+}
+
 #works-content .cell-5 {
     background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/images/makers-background.jpg");
     background-size: cover;
     background-position: center center;
+}
+
+#works-content .cell-5:hover {
+    background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url("assets/images/makers-background.jpg");
 }
 
 .see-all-container {
@@ -439,4 +471,12 @@ td {
     border-radius: 100px;
     font-size: 18px;
     text-decoration: none;
+}
+
+.all-works-link:hover {
+    background: rgba(215, 225, 245, 1);
+}
+
+.hidden {
+    display: none;
 }
