@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <title>Aditya Pradita's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
@@ -9,7 +10,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="flex-row">
+            <div class="flex-row-desktop relative center-mobile">
                 <div class="flex-col">
                     <img class="profile-photo" src="assets/images/photo.jpeg" />
                 </div>
@@ -18,8 +19,39 @@
                     <h2>Front End Engineer</h2>
                     <p>Bandung, Indonesia</p>
                 </div>
+                <div class="sns-link">
+                    <ul>
+                        <li>
+                            <a href="https://www.hackerrank.com/pradita397" target="_blank" title="Aditya Pradita Hackerrank Profile">
+                                <img src="assets/images/hackerrank-logo.png" alt="hackerrank logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/unpraditable" target="_blank" title="Aditya Pradita Github">
+                                <img src="assets/images/github-logo.png" alt="github logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aditya-pradita-7937a7108/" target="_blank" title="Aditya Pradita LinkedIn">
+                                <img src="assets/images/linkedin-logo.png" alt="LinkedIn logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+        </div>
+
+        <div id="nav-container" class="nav-container">
+            <nav id="sticky-container">
+                <div class="container">
+                    <a class="active">About</a>
+                    <a>Experience</a>
+                    <a>Skills</a>
+                    <a>Portfolio</a>
+                </div>
+
+            </nav>
         </div>
 
     </header>
@@ -27,8 +59,8 @@
         <div class="section" id="about-section">
             <h3>About & Education</h3>
             <div class="content" id="about-content">
-                <p>Front End Web Developer with 3 years of work experiences and a product enthusiast, especially digital products. Values benevolence and mindfulness the most. Always itchy to solve problems and learning something new. If this guy gets burned
-                    out, he often watches football matches, animes, reading mangas, and writing fictions. </p>
+                <p>Front End Web Developer with 4 years of work experiences and a product enthusiast, especially digital products. Values benevolence and mindfulness the most. Always itchy to solve some problems and learn something new. If this guy gets
+                    burned out, he often watches football matches, animes, reading mangas, and writing fictions. </p>
 
                 <div id="educations-content">
                     <div class="flex-row education">
@@ -53,34 +85,111 @@
             </div>
         </div>
 
-        <div class="section" id="about-section">
-            <h3>About & Education</h3>
-            <div class="content" id="about-content">
-                <p>Front End Web Developer with 3 years of work experiences and a product enthusiast, especially digital products. Values benevolence and mindfulness the most. Always itchy to solve problems and learning something new. If this guy gets burned
-                    out, he often watches football matches, animes, reading mangas, and writing fictions. </p>
+        <div class="section" id="experience-section">
+            <header class="section-header">
+                <h3>Work Experience</h3>
+            </header>
 
-                <div id="educations-content">
-                    <div class="flex-row education">
-                        <div class="flex-col">
-                            <img class="university-logo" src="assets/images/itb-logo.png" />
-                        </div>
-                        <div class="flex-col university-detail">
-                            <h3>Master of Business Administration, Institut Teknologi Bandung</h3>
-                            <p>Year 2017-2018 / 3.82 out of 4.00</p>
-                        </div>
-                    </div>
-                    <div class="flex-row education">
-                        <div class="flex-col">
-                            <img class="university-logo" src="assets/images/itb-logo.png" />
-                        </div>
-                        <div class="flex-col university-detail">
-                            <h3>Bachelor of Engineering, Institut Teknologi Bandung</h3>
-                            <p>Year 2011-2015 / 3.30 out of 4.00</p>
-                        </div>
-                    </div>
+            <div class="content" id="experience-content">
+                <div class="experience">
+                    <p class="experience-year">2019 - 7 Months</p>
+                    <h4 class="experience-title">UI Developer / iLOTTE.com</h4>
+                    <p class="experience-content">Collaborates with UI & UX Designers and Developers to translate mockup designs to functional User Interface that is attractive and meaningful for users</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2017 - 2 Years</p>
+                    <h4 class="experience-title">Frontend Developer / Rolling Glory</h4>
+                    <p class="experience-content">Collaborate with UI & UX Designers to translate mockup designs to functional User Interface, and collaborate with Backend Developers to integrate the data from backend or API that is created by them to the User Interface, so it will
+                        become a fully functional web applications.</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2016 - 1 Year</p>
+                    <h4 class="experience-title">Frontend Developer / Makers Institute Bandung</h4>
+                    <p class="experience-content">Learn to be a fully functional Frontend Developer and collaborate with the team to create Makers Institute website. Several projects that are received are also being done while learning something awesome here.</p>
+                </div>
+                <div class="experience">
+                    <p class="experience-year">2015 - 6 Months</p>
+                    <h4 class="experience-title">Product Analyst / Qerja.com</h4>
+                    <p class="experience-content">Gather requirements from user and translate it, so it could be developed by the developer team in order to build new features or new projects in jobs.id and qerja.com
+                    </p>
                 </div>
             </div>
         </div>
+
+        <div class="section" id="skill-section">
+            <header class="section-header">
+                <h3>Skills & Expertise</h3>
+            </header>
+
+            <div class="content" id="skill-content">
+                <table class="experience-table">
+                    <tr>
+                        <th>Programming Languages</th>
+                        <td>HTML5, CSS3, Javascript, Vanilla Javascript, Javascript ES6, PHP, SQL, JQuery</td>
+                    </tr>
+                    <tr>
+                        <th>Frameworks</th>
+                        <td>Vue JS, React JS, Laravel, Yii 2</td>
+                    </tr>
+                    <tr>
+                        <th>Tools & Softwares</th>
+                        <td>Sketch App, Adobe XD, Visual Studio Code, Sourcetree, Git, Microsoft Office</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section" id="works-section">
+            <header class="section-header">
+                <h3>Works</h3>
+            </header>
+            <div class="content" id="works-content">
+                <div class="cell cell-1">
+                    <h4>Vue Football Club Finder</h4>
+                    <p>2020</p>
+                </div>
+                <div class="cell cell-2">
+                    <h4>iLOTTE K-Festival 2019 Page</h4>
+                    <p>2019</p>
+                </div>
+                <div class="cell cell-3">
+                    <h4>Kalgen Innolab Web App</h4>
+                    <p>2018</p>
+                </div>
+                <div class="cell cell-4">
+                    <h4>Morinaga Platinum ComPro</h4>
+                    <p>2017</p>
+                </div>
+                <div class="cell cell-5">
+                    <h4>Makers Institute Website</h4>
+                    <p>2016</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            // Get the header
+            var header = document.getElementById("sticky-container");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+
+                } else {
+                    header.classList.remove("sticky");
+
+                }
+            }
+        </script>
 </body>
 
 </html>
