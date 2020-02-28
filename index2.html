@@ -108,11 +108,14 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            /* text-shadow: 1px 1px rgba(255, 255, 255, 0.6); */
         }
 
-        #works-content .cell :hover,
-        #works-content .cell :focus {
-            transform: scale(1.2);
+        #works-content .cell:hover,
+        #works-content .cell:focus {
+            cursor: pointer;
         }
 
         #works-content .cell p {
@@ -122,7 +125,7 @@
 
         #works-content .cell-1 {
             background-image:
-                linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0.73)),
+            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/football-background.jpg");
             background-size: cover;
             grid-row: 1/3;
@@ -131,7 +134,7 @@
 
         #works-content .cell-2 {
             background-image:
-                linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0.73)),
+            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/ilotte-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -139,7 +142,7 @@
 
         #works-content .cell-3 {
             background-image:
-                linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0.73)),
+            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/innolab-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -147,7 +150,7 @@
 
         #works-content .cell-4 {
             background-image:
-                linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0.73)),
+            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/morinaga-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -155,7 +158,7 @@
 
         #works-content .cell-5 {
             background-image:
-                linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0.73)),
+            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/makers-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -260,7 +263,7 @@
                     <p>2018</p>
                 </div>
                 <div class="cell cell-4">
-                    <h4>Morinaga Platinum Company Profile</h4>
+                    <h4>Morinaga Platinum ComPro</h4>
                     <p>2017</p>
                 </div>
                 <div class="cell cell-5">
