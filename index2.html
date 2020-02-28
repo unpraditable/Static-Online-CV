@@ -24,13 +24,13 @@
             }
         }
 
-        nav a{
+        nav a {
             font-weight: 700;
             color: lightgray;
             margin-right: 20px
         }
 
-        nav a.active{
+        nav a.active {
             color: #2B9FDC;
         }
 
@@ -134,12 +134,30 @@
             text-align: right;
         }
 
-        #works-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 20px 20px;
-            height: 500px;
+
+
+        @media only screen and (min-width: 769px) {
+            #works-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 20px 20px;
+                height: 500px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #works-content {
+                overflow: auto;
+                white-space: nowrap;
+            }
+
+            #works-content .cell {
+                height: 125px;
+                margin-bottom: 30px;
+                display: inline-block !important;
+                margin-right: 20px;
+            }
         }
 
         #works-content .cell {
@@ -239,7 +257,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
         <div class="container">
             <nav>
