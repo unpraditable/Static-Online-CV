@@ -7,7 +7,7 @@ header {
     -webkit-box-shadow: 0px 14px 22px 0px rgba(219, 219, 219, 1);
     -moz-box-shadow: 0px 14px 22px 0px rgba(219, 219, 219, 1);
     box-shadow: 0px 14px 22px 0px rgba(219, 219, 219, 1);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 h1,
@@ -51,7 +51,7 @@ p {
     left: 0;
     background: white;
     width: 100vw;
-    padding: 15px 0;
+    padding: 5px 0;
     z-index: 99;
     -webkit-box-shadow: 0px 14px 22px 0px rgba(219, 219, 219, 1);
     -moz-box-shadow: 0px 14px 22px 0px rgba(219, 219, 219, 1);
@@ -60,7 +60,7 @@ p {
 
 @media only screen and (max-width: 768px) {
     .sticky {
-        padding: 15px 0;
+        padding: 5px 0;
     }
 }
 
@@ -69,7 +69,8 @@ header .nav-container .container {
 }
 
 nav a {
-    color: rgba(0, 78, 241, 1);
+    color: rgba(50, 99, 241, 1);
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -137,6 +138,22 @@ header .container {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chevron {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.profile-details p {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-details p .location {
+    margin-right: 5px;
 }
 
 .content p {
@@ -145,7 +162,11 @@ header .container {
 }
 
 .section {
-    margin-bottom: 60px;
+    padding-top: 60px;
+}
+
+.section#works-section {
+    padding-bottom: 60px;
 }
 
 .university-logo {
@@ -197,11 +218,12 @@ header.section-header {
 nav a {
     font-weight: 700;
     color: lightgray;
-    margin-right: 20px
+    margin-right: 20px;
+    text-decoration: none;
 }
 
 nav a.active {
-    color: #2B9FDC;
+    color: rgba(50, 99, 241, 1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -233,7 +255,7 @@ nav a.active {
 }
 
 #experience-content .experience-year {
-    color: #2B9FDC;
+    color: rgba(50, 99, 241, 1);
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 0;
@@ -248,7 +270,7 @@ nav a.active {
 
 .experience {
     position: relative;
-    border-left: 1px dashed black;
+    border-left: 1px dashed rgba(50, 99, 241, 1);
     padding-left: 20px;
     margin-left: 10px;
     padding-bottom: 40px;
@@ -256,6 +278,7 @@ nav a.active {
 
 .experience:last-child {
     border-left: 1px dashed transparent;
+    padding-bottom: 0;
 }
 
 .experience-title {
@@ -270,7 +293,7 @@ nav a.active {
     top: 0;
     width: 15px;
     height: 15px;
-    background: #2B9FDC;
+    background: rgba(50, 99, 241, 1);
     display: block;
     content: "";
     border-radius: 100%;
@@ -287,7 +310,7 @@ nav a.active {
 }
 
 .experience-table tr {
-    border-bottom: 2px dashed black;
+    border-bottom: 1px dashed rgba(200, 200, 200, 1);
 }
 
 table,
@@ -311,6 +334,8 @@ th {
 td {
     width: 50%;
     text-align: right;
+    color: rgba(100, 100, 100, 1);
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -354,6 +379,10 @@ td {
     cursor: pointer;
 }
 
+#works-content .cell h4 {
+    margin-bottom: 0;
+}
+
 #works-content .cell p {
     margin-top: 0;
     color: white;
@@ -388,4 +417,25 @@ td {
     background-image: radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/images/makers-background.jpg");
     background-size: cover;
     background-position: center center;
+}
+
+.see-all-container {
+    padding: 60px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .see-all-container {
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+
+.all-works-link {
+    background: rgba(223, 233, 253, 1);
+    padding: 15px 35px;
+    color: rgba(50, 99, 241, 1);
+    font-weight: 700;
+    border-radius: 100px;
+    font-size: 18px;
 }
