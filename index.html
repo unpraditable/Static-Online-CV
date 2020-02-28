@@ -47,10 +47,10 @@
         <div id="nav-container" class="nav-container">
             <nav id="sticky-container">
                 <div class="container">
-                    <a class="active" onclick="smoothScroll('about-section')">About</a>
-                    <a onclick="smoothScroll('experience-section')">Experience</a>
-                    <a onclick="smoothScroll('skill-section')">Skills</a>
-                    <a onclick="smoothScroll('works-section')">Portfolio</a>
+                    <a class="active" href="#about-section" onclick="smoothScroll('about-section')">About</a>
+                    <a href="#experience-section" onclick="smoothScroll('experience-section')">Experience</a>
+                    <a href="#skill-section" onclick="smoothScroll('skill-section')">Skills</a>
+                    <a href="#works-section" onclick="smoothScroll('works-section')">Portfolio</a>
                 </div>
 
             </nav>
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="see-all-container">
-                    <a class="all-works-link">See All</a>
+                    <a href="https://github.com/unpraditable" class="all-works-link" target="_blank">See All</a>
                 </div>
 
             </div>
@@ -232,8 +232,8 @@
             scrollToSmoothly(elem.offsetTop, 4);
         }
 
-        let mainNavLinks = document.querySelectorAll("nav ul li a");
-        let mainSections = document.querySelectorAll("main section");
+        let mainNavLinks = document.querySelectorAll("nav div a");
+        let mainSections = document.querySelectorAll("section");
 
         let lastId;
         let cur = [];

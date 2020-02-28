@@ -162,7 +162,7 @@ header .container {
 }
 
 .section {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .section#works-section {
@@ -438,4 +438,5 @@ td {
     font-weight: 700;
     border-radius: 100px;
     font-size: 18px;
+    text-decoration: none;
 }
