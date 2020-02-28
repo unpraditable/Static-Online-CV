@@ -24,6 +24,16 @@
             }
         }
 
+        nav a{
+            font-weight: 700;
+            color: lightgray;
+            margin-right: 20px
+        }
+
+        nav a.active{
+            color: #2B9FDC;
+        }
+
         .sns-link ul {
             list-style: none;
             padding-left: 0;
@@ -197,7 +207,7 @@
         }
     </style>
     <header>
-        <div class="container">
+        <div class="container relative">
             <div class="flex-row relative">
                 <div class="flex-col">
                     <img class="profile-photo" src="assets/images/photo.jpeg" />
@@ -210,25 +220,34 @@
                 <div class="sns-link">
                     <ul>
                         <li>
-                            <a href="https://www.hackerrank.com/pradita397" target="_blank" title="Aditya Pradita Hackerrank Profile">
-                                <img src="assets/images/football-background.jpg" alt="hackerrank logo"/>
+                            <a href="https://www.hackerrank.com/pradita397" target="_blank"
+                                title="Aditya Pradita Hackerrank Profile">
+                                <img src="assets/images/football-background.jpg" alt="hackerrank logo" />
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/unpraditable" target="_blank" title="Aditya Pradita Github">
-                                <img src="assets/images/football-background.jpg" alt="github logo"/>
+                                <img src="assets/images/football-background.jpg" alt="github logo" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/aditya-pradita-7937a7108/" target="_blank" title="Aditya Pradita LinkedIn">
-                                <img src="assets/images/football-background.jpg" alt="LinkedIn logo"/>
+                            <a href="https://www.linkedin.com/in/aditya-pradita-7937a7108/" target="_blank"
+                                title="Aditya Pradita LinkedIn">
+                                <img src="assets/images/football-background.jpg" alt="LinkedIn logo" />
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-
+            
+        </div>
+        <div class="container">
+            <nav>
+                <a class="active">About</a>
+                <a>Experience</a>
+                <a>Skills</a>
+                <a>Portfolio</a>
+            </nav>
         </div>
 
     </header>
