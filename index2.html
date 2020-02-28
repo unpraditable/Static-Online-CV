@@ -12,6 +12,38 @@
             box-shadow: none;
         }
 
+        .relative {
+            position: relative;
+        }
+
+        @media only screen and (min-width: 769px) {
+            .sns-link {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        .sns-link ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .sns-link ul li {
+            display: inline-block;
+            margin: 0 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .sns-link ul li img {
+
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+
         .experience-year {
             color: #2B9FDC;
             font-size: 14px;
@@ -125,7 +157,7 @@
 
         #works-content .cell-1 {
             background-image:
-            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/football-background.jpg");
             background-size: cover;
             grid-row: 1/3;
@@ -134,7 +166,7 @@
 
         #works-content .cell-2 {
             background-image:
-            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/ilotte-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -142,7 +174,7 @@
 
         #works-content .cell-3 {
             background-image:
-            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/innolab-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -150,7 +182,7 @@
 
         #works-content .cell-4 {
             background-image:
-            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/morinaga-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -158,7 +190,7 @@
 
         #works-content .cell-5 {
             background-image:
-            radial-gradient(at bottom left,rgba(43, 159, 220, 0.4),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                radial-gradient(at bottom left, rgba(43, 159, 220, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("assets/images/makers-background.jpg");
             background-size: cover;
             background-position: center center;
@@ -166,7 +198,7 @@
     </style>
     <header>
         <div class="container">
-            <div class="flex-row">
+            <div class="flex-row relative">
                 <div class="flex-col">
                     <img class="profile-photo" src="assets/images/photo.jpeg" />
                 </div>
@@ -175,7 +207,27 @@
                     <h2>Front End Engineer</h2>
                     <p>Bandung, Indonesia</p>
                 </div>
+                <div class="sns-link">
+                    <ul>
+                        <li>
+                            <a href="https://www.hackerrank.com/pradita397" target="_blank">
+                                <img src="assets/images/football-background.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/unpraditable" target="_blank">
+                                <img src="assets/images/football-background.jpg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aditya-pradita-7937a7108/" target="_blank">
+                                <img src="assets/images/football-background.jpg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
 
         </div>
 
