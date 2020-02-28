@@ -8,11 +8,11 @@
 
 <body>
     <style>
-        header.section-header{
+        header.section-header {
             box-shadow: none;
         }
 
-        .experience-year{
+        .experience-year {
             color: #2B9FDC;
             font-size: 14px;
             margin-top: 0;
@@ -22,31 +22,31 @@
             top: -30px;
         }
 
-        #experience-content{
+        #experience-content {
             margin-top: 60px;
         }
 
-        .experience{
+        .experience {
             position: relative;
-            border-left: 1px dashed black; 
+            border-left: 1px dashed black;
             padding-left: 20px;
             margin-left: 10px;
             padding-bottom: 40px;
         }
 
-        .experience:last-child{
+        .experience:last-child {
             border-left: 1px dashed transparent;
         }
 
-        .experience-title{
+        .experience-title {
             margin-top: 0;
             line-height: 1;
         }
 
-        .experience:before{
+        .experience:before {
             position: absolute;
-            left:-7.5px;
-            top:0;
+            left: -7.5px;
+            top: 0;
             width: 15px;
             height: 15px;
             background: #2B9FDC;
@@ -55,9 +55,39 @@
             border-radius: 100%;
         }
 
-        .experience-content{
+        .experience-content {
             font-size: 14px;
             line-height: 2;
+        }
+        
+        .experience-table{
+            line-height: 2;
+            width: 100%;
+        }
+
+        .experience-table tr{
+            border-bottom: 2px dashed black;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+            padding: 15px 0;
+
+        }
+        th{
+            width: 50%;
+        }
+        td{
+            width: 50%;
+            text-align: right;
         }
     </style>
     <header>
@@ -77,8 +107,8 @@
 
     </header>
 
-    <div class="section" id="experience-section">
-        <div class="container">
+    <div class="container">
+        <div class="section" id="experience-section">
             <header class="section-header">
                 <h3>Work Experience</h3>
             </header>
@@ -87,26 +117,61 @@
                 <div class="experience">
                     <p class="experience-year">2019 - 7 Months</p>
                     <h4 class="experience-title">UI Developer / iLOTTE.com</h4>
-                    <p class="experience-content">Collaborates with UI & UX Designers and Developers to translate mockup designs to functional User Interface that is attractive and meaningful for users</p>
+                    <p class="experience-content">Collaborates with UI & UX Designers and Developers to translate mockup
+                        designs to functional User Interface that is attractive and meaningful for users</p>
                 </div>
                 <div class="experience">
                     <p class="experience-year">2017 - 2 Years</p>
                     <h4 class="experience-title">Frontend Developer / Rolling Glory</h4>
-                    <p class="experience-content">Collaborate with UI & UX Designers to translate mockup designs to functional User Interface, and collaborate with Backend Developers to integrate the data from backend or API that is created by them to the User Interface, so it will become a fully functional web applications.</p>
+                    <p class="experience-content">Collaborate with UI & UX Designers to translate mockup designs to
+                        functional User Interface, and collaborate with Backend Developers to integrate the data from
+                        backend or API that is created by them to the User Interface, so it will become a fully
+                        functional
+                        web applications.</p>
                 </div>
                 <div class="experience">
                     <p class="experience-year">2016 - 1 Year</p>
                     <h4 class="experience-title">Frontend Developer / Makers Institute Bandung</h4>
-                    <p class="experience-content">Learn to be a fully functional Frontend Developer and collaborate with the team to create Makers Institute website. Several projects that are received are also being done while learning something awesome here.</p>
+                    <p class="experience-content">Learn to be a fully functional Frontend Developer and collaborate with
+                        the
+                        team to create Makers Institute website. Several projects that are received are also being done
+                        while learning something awesome here.</p>
                 </div>
                 <div class="experience">
                     <p class="experience-year">2015 - 6 Months</p>
                     <h4 class="experience-title">Product Analyst / Qerja.com</h4>
-                    <p class="experience-content">Gather requirements from user and translate it, so it could be developed by the developer team in order to build new features or new projects in jobs.id and qerja.com</p>
+                    <p class="experience-content">Gather requirements from user and translate it, so it could be
+                        developed
+                        by the developer team in order to build new features or new projects in jobs.id and qerja.com
+                    </p>
                 </div>
             </div>
         </div>
+
+        <div class="section" id="skill-section">
+            <header class="section-header">
+                <h3>Skills & Expertise</h3>
+            </header>
+
+            <div class="content" id="skill-content">
+                <table class="experience-table">
+                    <tr>
+                      <th>Programming Languages</th>
+                      <td>HTML5, CSS3, Javascript, Vanilla Javascript, Javascript ES6, PHP, SQL, JQuery</td>
+                    </tr>
+                    <tr>
+                      <th>Frameworks</th>
+                      <td>Vue JS, React JS, Laravel, Yii 2</td>
+                    </tr>
+                    <tr>
+                      <th>Tools & Softwares</th>
+                      <td>Sketch App, Adobe XD, Visual Studio Code, Sourcetree, Git, Microsoft Office</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
